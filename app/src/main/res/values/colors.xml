@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b90000</color>
+    <color name="colorAppPrimary">#b90000</color>
+    <color name="colorPrimaryDark">#b90000</color>
+    <color name="appColorDark">#303F9F</color>
+    <color name="colorAccent">#6c6b6b</color>
+    <color name="orange">#FD6D22</color>
+    <color name="black">#000000</color>
+    <color name="gray">#FD525050</color>
+    <color name="gray_3f3d3d">#3f3d3d</color>
+    <color name="gray_6c6b6b">#6c6b6b</color>
+    <color name="gray_bbbbbb">#bbbbbb</color>
+    <color name="black_050505">#050505</color>
+    <color name="light_grey_f1f1f1">#f1f1f1</color>
+    <color name="light_grey_c1c1c1">#c1c1c1</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="terms_and_condition_text">#007bff</color>
+    <color name="colorTransparent">#590E0F0F</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="light_grey">#20000000</color>
+    <color name="medium_grey">#3C000000</color>
+    <color name="yellow">#FFD600</color>
+    <color name="progress_green">#00A651</color>
+    <color name="progress_orange">#FD6D22</color>
+    <color name="progress_red">#F70F0F</color>
+    <color name="light_grey_bg">#ECF0F6</color>
+</resources>

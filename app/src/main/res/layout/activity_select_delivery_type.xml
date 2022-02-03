@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dimen_30dp"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+
+            <com.vmotors.ui.components.LECompatButton
+                android:id="@+id/tvFor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="@drawable/edditext_orange_bg_rectangle"
+                android:text="@string/_for"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+
+            <com.vmotors.ui.components.LECompatButton
+                android:id="@+id/tvEx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="@drawable/edditext_orange_bg_rectangle"
+                android:text="@string/ex_mill"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

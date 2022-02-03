@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="LEditTextView" >
+        <attr name="android:text" format="string" />
+        <attr name="android:hint" format="string" />
+        <attr name="android:maxLength" format="integer" />
+        <attr name="android:inputType" format="reference" />
+        <attr name="drawableLeft" format="reference" />
+        <attr name="drawableRight" format="reference" />
+        <attr name="focusable" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="LECompatSpinnerView">
+        <attr name="labelSpinner" format="string" />
+        <attr name="android:entries" />
+        <attr name="array_spinner" format="reference" />
+        <attr name="android:enabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="LERatingBarView" >
+        <attr name="android:text" format="string" />
+        <attr name="android:gravity" format="integer" />
+        <attr name="android:stepSize" format="integer" />
+        <attr name="textbackground" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PinEditText">
+        <attr name="digitColor" format="reference"/>
+        <attr name="defaultPinBackgroundColor" format="reference"/>
+        <attr name="activePinBackgroundColor" format="reference"/>
+        <attr name="focusedPinBackgroundColor" format="reference"/>
+        <attr name="completePinBackgroundColor" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="LECompatButton">
+        <attr name="android:text" format="string"/>
+        <attr name="android:enabled" format="boolean"/>
+        <attr name="android:textAllCaps" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="LECompatLabelEditText" >
+        <attr name="android:text" format="string" />
+        <attr name="android:hint" format="string" />
+        <attr name="android:maxLength" format="integer" />
+        <attr name="android:inputType" format="reference" />
+        <attr name="drawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+
+        <attr name="civ_border_width" format="dimension" />
+
+        <attr name="civ_border_color" format="color" />
+
+        <attr name="civ_border_overlay" format="boolean" />
+
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+
+
+        <attr name="civ_fill_color" format="color" />
+
+        <attr name="civ_circle_background_color" format="color" />
+        <attr name="civ_cornor_radius" format="dimension" />
+
+    </declare-styleable>
+
+</resources>

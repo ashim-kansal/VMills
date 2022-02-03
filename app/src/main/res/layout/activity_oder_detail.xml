@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".ui.order_details.OderDetailActivity">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10dp"
+            android:visibility="gone"
+            android:text="SKU SCANNING"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_18sp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/black_050505" />
+
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_marginTop="@dimen/dimen_20dp"-->
+<!--            android:paddingTop="@dimen/dimen_20dp"-->
+<!--            app:cardCornerRadius="@dimen/dimen_12dp"-->
+<!--            app:cardElevation="@dimen/dimen_8dp"-->
+<!--            app:cardUseCompatPadding="true">-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dimen_30dp"
+                android:layout_below="@id/divider"
+                android:orientation="vertical">
+
+
+                <com.vmotors.ui.components.LEditText
+                    android:id="@+id/tvKantaSlipNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/kanta_slip_number"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:textSize="14sp"
+                    app:drawableLeft="@drawable/ic_email" />
+
+                <com.vmotors.ui.components.LEditText
+                    android:id="@+id/tvGrossQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/gross_weight"
+                    android:inputType="numberDecimal"
+                    android:maxLength="6"
+                    android:textSize="14sp"
+                    app:drawableLeft="@drawable/ic_email" />
+
+                <com.vmotors.ui.components.LEditText
+                    android:id="@+id/tvTareQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/tare_weight"
+                    android:inputType="numberDecimal"
+                    android:maxLength="6"
+                    android:textSize="14sp"
+                    app:drawableLeft="@drawable/ic_email" />
+
+                <com.vmotors.ui.components.LEditText
+                    android:id="@+id/tvNetQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/net_weight"
+                    android:inputType="numberDecimal"
+                    android:maxLength="6"
+                    android:textSize="14sp"
+                    app:drawableLeft="@drawable/ic_email" />
+
+                 <com.vmotors.ui.components.LEditText
+                    android:id="@+id/tvbags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="No of bags"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textSize="14sp"
+                    app:drawableLeft="@drawable/ic_email" />
+
+                 <com.vmotors.ui.components.LEditText
+                    android:id="@+id/tvTruckNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/truck_no"
+                    android:maxLength="12"
+                    android:textSize="14sp"
+                    app:drawableLeft="@drawable/ic_email" />
+
+                <com.vmotors.ui.components.LEditText
+                    android:id="@+id/tvDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/date"
+                    android:maxLength="12"
+                    android:textSize="14sp"
+                    app:drawableLeft="@drawable/ic_email" />
+
+                <com.vmotors.ui.components.LEditText
+                    android:id="@+id/tvBillNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/bill_no"
+                    android:maxLength="12"
+                    android:textSize="14sp"
+                    app:drawableLeft="@drawable/ic_email" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Kanta Slip"
+                    android:layout_marginTop="@dimen/dimen_10dp"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivKantaSlip"
+                    android:layout_width="@dimen/dimen_100dp"
+                    android:layout_height="@dimen/dimen_100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/pick"
+                    android:layout_marginTop="@dimen/dimen_10dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Bill Slip"
+                    android:layout_marginTop="@dimen/dimen_10dp"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivBillSlip"
+                    android:layout_width="@dimen/dimen_100dp"
+                    android:layout_height="@dimen/dimen_100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/pick" />
+
+
+                <com.vmotors.ui.components.LECompatButton
+                    android:id="@+id/tvUpload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:background="@drawable/edditext_orange_bg_rectangle"
+                    android:text="Upload"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+
+    </RelativeLayout>
+    </ScrollView>
+</layout>
